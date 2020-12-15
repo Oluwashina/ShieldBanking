@@ -1,0 +1,158 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+
+
+/* Wrapping element */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* Fonts definition */
+@font-face {
+    font-family: "Digital Numbers";
+    src: url('./fonts/DigitalNumbers400.ttf');
+}
+
+/* sidenav styles */
+.sidenav {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+
+.main {
+    margin-left: 60px; /* Same as the width of the sidenav */
+    /* font-size: 10px; Increased text to enable scrolling */
+    padding: 10px 10px;
+}
+
+
+.contain {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* dashboard styles */
+.text-color {
+    color: #7D7A93;
+    font-weight: bold;
+}
+
+.input-style {  
+    padding: 10px;
+}
+
+.input-style:focus {
+    border: none;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    outline: 0 none;
+}
+
+.select-style{
+    padding: 2px;
+}
+
+.select-style:focus {
+    border: none;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    outline: 0 none;
+}
+
+.signIn-style {
+    background: #7951CD;
+    color: white;
+    padding: 13px 13px;
+    transition: all 0.5s;
+    border: none;
+}
+
+.signIn-style:hover {
+    background-color: #7951CD;
+    color: white;
+}
+
+.connect-style {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+}
+
+.value-style {
+    color: #55545F;
+    font-weight: bold;
+}
+.submit_btn {
+    margin-top: 30px;
+}
+
+
+.white-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+
+/* table styles */
+th {
+    color: #7951CD;
+}
+
+td {
+    font-size: 15px;
+}
+
+
+
+
+/* Forgot passwrd styles*/
+.forgot-input {
+    width: 40%;
+}
+
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .forgot-input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .submit_btn {
+        margin-top: 5px;
+    }
+
+    .forgot-input {
+        width: 100%;
+    }
+}
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
