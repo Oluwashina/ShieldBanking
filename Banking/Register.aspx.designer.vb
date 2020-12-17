@@ -59,6 +59,15 @@ Partial Public Class _Default
     Protected WithEvents TxtPhone As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''DDCountry control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DDCountry As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
     '''TxtContactPerson control.
     '''</summary>
     '''<remarks>

@@ -14,38 +14,137 @@ Option Explicit On
 Partial Public Class _Default
 
     '''<summary>
-    '''TxtUserID control.
+    '''TxtCurrUser control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtUserID As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtCurrUser As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtBankID control.
+    '''TxtAcctNo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtBankID As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtAcctNo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtPassWord control.
+    '''LblHolder control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtPassWord As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents LblHolder As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''ButtonLog control.
+    '''TxtBranchCode control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ButtonLog As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents TxtBranchCode As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''TxtBranch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtBranch As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''TxtTransDate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtTransDate As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LblCurBal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblCurBal As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LblLoan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblLoan As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LblCOT control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblCOT As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LblUnCleared control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblUnCleared As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LblWithAmt control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblWithAmt As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''GridViewAccounts control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GridViewAccounts As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''ButSig control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ButSig As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''ButClose control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ButClose As Global.System.Web.UI.WebControls.Button
 End Class

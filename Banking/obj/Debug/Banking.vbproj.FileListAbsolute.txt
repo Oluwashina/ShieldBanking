@@ -154,3 +154,10 @@ C:\Users\emric\Source\Repos\ShieldBanking\Banking\obj\Debug\Banking.vbproj.CopyC
 C:\Users\emric\Source\Repos\ShieldBanking\Banking\obj\Debug\Banking.dll
 C:\Users\emric\Source\Repos\ShieldBanking\Banking\obj\Debug\WebForms_Basic.xml
 C:\Users\emric\Source\Repos\ShieldBanking\Banking\obj\Debug\Banking.pdb
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\Banking.vbprojAssemblyReference.cache
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\Banking.Resources.resources
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\Banking.vbproj.GenerateResource.cache
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\Banking.vbproj.CoreCompileInputs.cache
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\Banking.dll
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\WebForms_Basic.xml
+C:\Users\MY PC\Documents\MyProjects\ASP.NET\ShieldBankingProject\Banking\obj\Debug\Banking.pdb
