@@ -16,6 +16,8 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <%-- Icons libary --%>
+    <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
 
 </head>
 <body>
