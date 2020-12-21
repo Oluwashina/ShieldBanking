@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Customer Group Admin" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CustGroup.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="Customer Group Admin" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="CustGroup.aspx.vb" Inherits="Banking._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">

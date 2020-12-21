@@ -1,4 +1,4 @@
-﻿<%@ Page Title="General Ledger Account Admin" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GLAcctAdmin.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="General Ledger Account Admin" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="GLAcctAdmin.aspx.vb" Inherits="Banking._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Loan Repayment" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LoanRepayment.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="Loan Repayment" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="LoanRepayment.aspx.vb" Inherits="Banking._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">

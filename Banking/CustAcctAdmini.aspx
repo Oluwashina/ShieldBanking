@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Customer Registration" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CustAcctAdmini.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="Customer Registration" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="CustAcctAdmini.aspx.vb" Inherits="Banking._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
