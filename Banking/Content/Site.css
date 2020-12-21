@@ -120,6 +120,24 @@ td {
     font-size: 15px;
 }
 
+.height {
+    height: 14px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+/*Passwrd visibility styles*/
+
+.secret {
+    position: relative;
+}
+
+.password_icon {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+}
 
 
 

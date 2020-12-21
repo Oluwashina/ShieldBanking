@@ -14,101 +14,119 @@ Option Explicit On
 Partial Public Class _Default
 
     '''<summary>
-    '''TxtBankName control.
+    '''TxtCurrUser control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtBankName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtCurrUser As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtBankRegID control.
+    '''TxtAcctNo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtBankRegID As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtAcctNo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtEmail control.
+    '''LblHolder control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtEmail As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents LblHolder As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtAddress control.
+    '''TxtBranchCode control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtAddress As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtBranchCode As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtPhone control.
+    '''TxtBranch control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtPhone As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtBranch As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''DDCountry control.
+    '''DDTransType control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDCountry As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDTransType As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''TxtContactPerson control.
+    '''TxtInstruNo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtContactPerson As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtInstruNo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtUserRegID control.
+    '''TxtTransDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtUserRegID As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtTransDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TxtRegPassword control.
+    '''DDCrDr control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtRegPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDCrDr As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''TxtRegReenterPassword control.
+    '''TxtParticular control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtRegReenterPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtParticular As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''ButRegister control.
+    '''TxtTransAmt control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ButRegister As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents TxtTransAmt As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''DDCashAcct control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DDCashAcct As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''CheckClearChq control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CheckClearChq As Global.System.Web.UI.WebControls.CheckBox
 End Class

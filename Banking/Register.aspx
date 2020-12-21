@@ -75,11 +75,11 @@
                      
             <div class="form-group">
                 <label for="DDCountry">Country</label>
-                  <select class="form-control select-style" id="DDCountry">
-                    <option value="nigeria">Nigeria</option>
-                    <option value="kenya">Kenya</option>
-                    <option value="ghana">Ghana</option>
-                </select>
+                <asp:DropDownList ID="DDCountry" runat="server" CssClass="form-control select-style">
+                    <asp:ListItem>Nigeria</asp:ListItem>
+                    <asp:ListItem>Kenya</asp:ListItem>
+                    <asp:ListItem>Ghana</asp:ListItem>
+                </asp:DropDownList>
                     
             
             </div>
