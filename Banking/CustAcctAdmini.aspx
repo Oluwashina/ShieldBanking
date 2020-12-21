@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Customer Registration" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="CustAcctAdmini.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="Customer Registration" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CustAcctAdmini.aspx.vb" Inherits="Banking._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -122,11 +122,37 @@
                             </div>
                             <div class="form-group mx-auto">
                                 <label>Date Of Birth</label>
-                                <asp:TextBox ID="TextBox6" runat="server" class="form-control input-style" ReadOnly="true"></asp:TextBox>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-4">
+                                        <asp:DropDownList ID="DOBDay" CssClass="form-control select-style" runat="server">
+                                        </asp:DropDownList>
+                                    </div>
+                                     <div class="col-lg-4">
+                                        <asp:DropDownList ID="DOBMonth" CssClass="form-control select-style" runat="server">
+                                        </asp:DropDownList>
+                                    </div>
+                                     <div class="col-lg-4">
+                                        <asp:DropDownList ID="DOBYear" CssClass="form-control select-style" runat="server">
+                                        </asp:DropDownList>
+                                    </div>
+                                </div>
                             </div>
                              <div class="form-group mx-auto">
                                 <label>Date Opened</label>
-                                <asp:TextBox ID="TextBox8" runat="server" class="form-control input-style" ReadOnly="true"></asp:TextBox>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-lg-4">
+                                        <asp:DropDownList ID="DOpenDay" CssClass="form-control select-style" runat="server">
+                                        </asp:DropDownList>
+                                    </div>
+                                     <div class="col-lg-4">
+                                        <asp:DropDownList ID="DOpenMonth" CssClass="form-control select-style" runat="server">
+                                        </asp:DropDownList>
+                                    </div>
+                                     <div class="col-lg-4">
+                                        <asp:DropDownList ID="DOpenYear" CssClass="form-control select-style" runat="server">
+                                        </asp:DropDownList>
+                                    </div>
+                                </div>
                             </div>
                              <div class="form-group mx-auto">
                                 <label>Sex</label>
