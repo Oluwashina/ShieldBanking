@@ -55,11 +55,11 @@
             </div> 
         </div>
         <div class="buttons row justify-content-center">
-            <asp:Button ID="ButClose" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Add New" />
-            <asp:Button ID="ButDelete" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Save" />
-            <asp:Button ID="ButSave" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Edit" />
-            <asp:Button ID="ButEdit" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Print Group List" />
-            <asp:Button ID="ButPrevious" CssClass="btn btn-outline-primary" runat="server" Text="Close" />
+            <asp:Button ID="ButGenNewAcct" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Add New" />
+            <asp:Button ID="ButSave" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Save" />
+            <asp:Button ID="ButEdit" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Edit" />
+            <asp:Button ID="Button2" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Print Group List" />
+            <asp:Button ID="ButClose" CssClass="btn btn-outline-primary" runat="server" Text="Close" />
         </div>
     </div>
 </asp:Content>
