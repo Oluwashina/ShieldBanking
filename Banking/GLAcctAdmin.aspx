@@ -1,4 +1,4 @@
-﻿<%@ Page Title="General Ledger Account Admin" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GLAcctAdmin.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="General Ledger Account Admin" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="GLAcctAdmin.aspx.vb" Inherits="GLAcctAdmin" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -46,7 +46,11 @@
                     <div class="col-lg-6">
                         <div class="form-group" style="">
                             <label>G/L Account Nature</label>
-                            <asp:TextBox ID="DDGLAcctNat" runat="server" class="form-control input-style" TabIndex="1"></asp:TextBox>     
+                             <asp:DropDownList ID="DDGLAcctNat" runat="server" CssClass="form-control select-style">
+                                <asp:ListItem>P</asp:ListItem>
+                                <asp:ListItem>N</asp:ListItem>
+                                <asp:ListItem>None</asp:ListItem>
+                            </asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -75,13 +79,12 @@
         </div>
         <div class="buttons row justify-content-center">
             <asp:Button ID="ButClose" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Close" />
-            <asp:Button ID="ButDelete" CssClass="btn btn-outline-primary mr-3" runat="server"  Text="Delete" Enabled="False" />
+           
             <asp:Button ID="ButSave" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Save" />
             <asp:Button ID="ButEdit" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Edit" />
-            <asp:Button ID="ButPrevious" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Previous" Enabled="False" />
+            
             <asp:Button ID="ButPrint" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Print GL List" />
-            <asp:Button ID="ButNext" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Next" Enabled="False" />
-            <asp:Button ID="ButAdd" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Add" />
+
             <asp:Button ID="ButSearch" CssClass="btn btn-outline-primary" runat="server" Text="Search" />
         </div>
     </div>

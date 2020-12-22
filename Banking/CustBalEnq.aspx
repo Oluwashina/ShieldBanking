@@ -1,4 +1,4 @@
-﻿<%@ Page Title="CustomerBalanceEnquiry" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CustBalEnq.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="CustomerBalanceEnquiry" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="CustBalEnq.aspx.vb" Inherits="CustBalEnq" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -17,7 +17,7 @@
                     <div class="form-group mt-3" style="">
                         <label>Username</label>
                         <asp:TextBox ID="TxtCurrUser" runat="server"
-                            Text="admin"
+                            Text=""
                               class="form-control input-style"></asp:TextBox>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
               <div class="row mt-2">
                 <div class="col-lg-12">
                     <div class="form-group" style="">
-                <label>Account No</label>
+                      <asp:Label ID="LblTxtAcctNo" runat="server" Text="Account No:"></asp:Label>
                         <asp:TextBox ID="TxtAcctNo" runat="server" class="form-control input-style"
                  Visible="True" AutoPostBack="True"></asp:TextBox>
             </div>
@@ -49,13 +49,13 @@
                 <div class="col-lg-6">
                     <div class="form-group" style="">
                 <label>Branch Code</label>
-                     <asp:TextBox ID="TxtBranchCode" Text="01" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>                          
+                     <asp:TextBox ID="TxtBranchCode" Text="" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>                          
             </div>
                 </div>
                   <div class="col-lg-6">
                     <div class="form-group" style="">
                 <label>Branch</label>
-                        <asp:TextBox ID="TxtBranch" Text="Molete" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>  
+                        <asp:TextBox ID="TxtBranch" Text="" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>  
             </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="form-group" style="">
                 <label>Trans Date</label>
                       <asp:TextBox ID="TxtTransDate" runat="server" class="form-control input-style"
-                          Text="12/05/2020"
+                          Text=""
                      ReadOnly="True"></asp:TextBox>
             </div>
                 </div>
@@ -76,13 +76,13 @@
                 <div class="col-lg-6">
                     <div class="form-group" style="">
                 <label>Account Balance</label>
-                     <asp:TextBox ID="LblCurBal" Text="-138,000" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>                          
+                     <asp:TextBox ID="LblCurBal" Text="" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>                          
             </div>
                 </div>
                   <div class="col-lg-6">
                     <div class="form-group" style="">
                 <label>Loan Balance</label>
-                        <asp:TextBox ID="LblLoan" Text="-26,200" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>  
+                        <asp:TextBox ID="LblLoan" Text="" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>  
             </div>
                 </div>
             </div>
@@ -92,13 +92,13 @@
                 <div class="col-lg-6">
                     <div class="form-group" style="">
                 <label>C.O.T Balance</label>
-                     <asp:TextBox ID="LblCOT" Text="0.00" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>                          
+                     <asp:TextBox ID="LblCOT" Text="" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>                          
             </div>
                 </div>
                   <div class="col-lg-6">
                     <div class="form-group" style="">
                 <label>Uncleared Effect</label>
-                        <asp:TextBox ID="LblUnCleared" Text="0.00" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>  
+                        <asp:TextBox ID="LblUnCleared" Text="" class="form-control input-style" runat="server" ReadOnly="True"></asp:TextBox>  
             </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                     <div class="form-group" style="">
                 <label>Withdrawal Amount</label>
                         <asp:TextBox ID="LblWithAmt" runat="server" class="form-control input-style"
-                            Text="-13,800"
+                            Text=""
                  Visible="True" ReadOnly="True"></asp:TextBox>
                        
                  </div>
@@ -117,8 +117,9 @@
 
 
             <div class="mt-2">
-                <asp:Panel ID="Panel1" runat="server" Height="280px">
-        <asp:GridView ID="GridViewAccounts" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Width="946px">
+                <asp:Panel ID="Panel1" runat="server">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+        <asp:GridView ID="GridViewAccounts" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
             <Columns>
                 <asp:BoundField HeaderText="Account No">
                 <ItemStyle Width="150px" />
@@ -145,8 +146,8 @@
 
             </div>
 
-            <div class="text-center mt-2">
-                <asp:Button ID="ButSig" runat="server" class="btn btn-primary mr-2"  Text="Signature & Photo"  />
+            <div class="text-center mt-3">
+                <%--<asp:Button ID="ButSig" runat="server" class="btn btn-primary mr-2"  Text="Signature & Photo"  />--%>
                 <asp:Button ID="ButClose" runat="server" class="btn btn-secondary"  Text="Close"/>
             </div>
 

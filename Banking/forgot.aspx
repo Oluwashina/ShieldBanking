@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Forgot Password" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="forgot.aspx.vb" Inherits="Banking._Default" %>
+﻿<%@ Page Title="Forgot Password" Language="VB" MasterPageFile="~/SiteLogin.master" AutoEventWireup="true" CodeBehind="forgot.aspx.vb" Inherits="Banking._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="LoginContent" runat="server">
 
    
     <div class="text-center mt-5">
@@ -21,7 +21,7 @@
         <input type="text" class="form-control input-style" id="email" placeholder="Email" required>
 
         <div class="text-center mt-1">
-          <span font-size: 80%; color: #212529; text-decoration: none;">Remember password? <a href="Default.aspx" style="text-decoration: none;">Login</a></span>
+          <span font-size: 80%; color: #212529; text-decoration: none;">Remember password? <a href="Login.aspx" style="text-decoration: none;">Login</a></span>
         </div>
      </div>
      

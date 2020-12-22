@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <%-- Icons libary --%>
     <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
 
 </head>
 <body>
@@ -41,17 +42,200 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
+                <table>
+                    <tr>
+                <td style="width: 10545px; height: 11px;">
+                    &nbsp;
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Login.aspx" Style="left: 847px;
+                        position: absolute; top: 2px">Logout</asp:HyperLink>
+                    <asp:Menu ID="MainMenu" runat="server" BackColor="Black" DynamicHorizontalOffset="2"
+                        Font-Names="Verdana" Font-Size="Small" ForeColor="Firebrick" Height="74px" StaticSubMenuIndent="15px"
+                        Style="left: 5px; position: static; top: -112px; background-color: lightyellow; color: #ff3366; font-weight: bold;" Orientation="Horizontal" BorderColor="Red" Width="950px" DisappearAfter="5000" CssClass="static selected">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#FFC0C0" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <StaticSelectedStyle BackColor="#FFC0C0" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicItemTemplate>
+                            <%# Eval("Text") %>
+                        </DynamicItemTemplate>
+                        <Items>
+                            <asp:MenuItem NavigateUrl=" " Text="File Maintenance" Value="File Maintenance">
+                                <asp:MenuItem NavigateUrl="~/AccountOfficer.aspx" Text="Account Officer File" Value="Account Officer File">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Marketers Target Settings" Value="Marketers Target Settings"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/BranchSetup.aspx" Text="Branch Setup" Value="Branch Setup">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/BankSetup.aspx" Text="Banks Setup" Value="Banks Setup">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Account Administration" Value="Account Administration">
+                                <asp:MenuItem NavigateUrl="~/CustAcctAdmini.aspx" Text="Customer Account Openning" Value="Customer Account Openning"></asp:MenuItem>
+                                <asp:MenuItem Text="Customer Account Flaging" Value="Customer Account Flaging"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/GLAcctAdmin.aspx" Text="General Ledger Admin" Value="General Ledger Admin">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ProdMaint.aspx" Text="Product Maintenance"
+                                    Value="Product Maintenance"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/CustGroup.aspx" Text="Group Account Admin"
+                                    Value="Group Account Admin"></asp:MenuItem>
+                                <asp:MenuItem Text="Vault Operation Admin" Value="Cash Collection Admin" NavigateUrl="~/CashCollect.aspx">
+                                    <asp:MenuItem Text="Vault In" Value="Vault In" NavigateUrl="~/VaultIn.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Vault Out" Value="Vault Out" NavigateUrl="~/VaultOut.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Loan Administration (Standard)" Value="Budget Definition" NavigateUrl="~/LoanApplication.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Loan Administration (Single Account)" Value="Loan Administration (Single Account)"></asp:MenuItem>
+                                <asp:MenuItem Text="Loan Repayments" Value="Loan Administration" NavigateUrl="~/LoanRepayment.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/FixedDeposit.aspx" Text="Fixed Deposit Admin" Value="Overdraft Admin">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Fixed Asset Group Admin" Value="Fixed Asset Group Admin" NavigateUrl="~/FixedAssetGrp.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Fixed Asset Admin" Value="Fixed Asset Admin" NavigateUrl="~/FixedAsset.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Fixed Asset Disposal" Value="Fixed Asset Disposal" NavigateUrl="~/FixedAssetDisposal.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/StandOrderMaint.aspx" Text="Standing Order Admin" Value="Standing Order Admin">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Budget Admin" Value="Budget Admin"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Postings" Value="Postings">
+                                <asp:MenuItem NavigateUrl="~/PostingRealTime.aspx" Text="Daily Transaction Postings" Value="Real Time Postings">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Journal Posting" Value="Journal Posting" NavigateUrl="~/JournalPosting.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Salary Posting" Value="Salary Posting"></asp:MenuItem>
+                                <asp:MenuItem Text="Daily Transaction Listing" Value="Check Listing" NavigateUrl="~/RepSelUserDate.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/AutoPosting.aspx" Text="Auto Posting" Value="Auto Posting">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Authorise.aspx" Text="Postings Authorization" Value="Postings Authorization"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Account Enquiry" Value="Account Enquiry">
+                                <asp:MenuItem NavigateUrl="~/CustBalEnq.aspx" Text="Customer Account Balance" Value="Customer Account Balance">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="GL Account Balance" Value="GL Account Balance" NavigateUrl="~/GLBalanceREP.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Account Officer Summary" Value="Account Officer Summary"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Utilities" Value="Utilities">
+                                <asp:MenuItem NavigateUrl="~/SpecialChar.aspx" Text="Special Charges" Value="Special Charges" Enabled="False">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Daily Backup" Value="Daily Backup" NavigateUrl="~/DataBackup.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/UserAdmin.aspx" Text="Users Admin" Value="Users Admin"></asp:MenuItem>
+                                <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/ChangePassword.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/SMSControl.aspx" Text="Send SMS" Value="Send SMS"></asp:MenuItem>
+                                <asp:MenuItem Text="Daily Processing" Value="Daily Processing" NavigateUrl="~/EndOfDay.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Monthly Processing" Value="Monthly Processing"></asp:MenuItem>
+                                <asp:MenuItem Text="Annual Processing" Value="Annual Processing"></asp:MenuItem>
+                                <asp:MenuItem Text="Change Transaction Date" Value="Change Transaction Date" NavigateUrl="~/ChangeTransDate.aspx" Enabled="False"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Management Reports" Value="Management Reports">
+                                <asp:MenuItem NavigateUrl="~/TrialBalanceREP.aspx" Text="Trial Balance" Value="Trial Balance">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/TrialBalSumm.aspx" Text="Trial Balance Summary" Value="Trial Balance Summary">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/BalanceSheet.aspx" Text="Balance Sheet" Value="Balance Sheet">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/DetailBalanceSheet.aspx" Text="Balance Sheet Details"
+                                    Value="Balance Sheet Details"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelFinalDate.aspx" Text="Final Accounts (Periodic)" Value="Final Accounts (Periodic)">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Profit &amp; Loss Account" Value="Profit &amp; Loss Account" NavigateUrl="~/ProfitLoss.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ProfitLossClass.aspx" Text="Profit &amp; Loss (Grouped)"
+                                    Value="Profit &amp; Loss (Grouped)"></asp:MenuItem>
+                                <asp:MenuItem Text="Customer Listing" Value="Customer Listing" NavigateUrl="~/CustListing.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Customer Statements Of Account" Value="Customer Statements" NavigateUrl="~/RepSelCustNoDate.aspx" PopOutImageUrl="~/WB02190_.GIF"></asp:MenuItem>
+                                <asp:MenuItem Text="Customer Overdrawn Account Listing" Value="Customer Overdrawn Account Listing" NavigateUrl="~/OverDrawnAcct.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelCustGroup.aspx" Text="Customer Group Report" Value="Customer Group Report">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Customers Account Summary (Group)" Value="Customers Account Summary (Group)" NavigateUrl="~/RepSelAcctSumAll.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Customers Account Summary (Single)" Value="Customers Account Summary (Single)" NavigateUrl="~/RepSelAcctSumm.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="All Customer Listing By Clasification" Value="All Male Customer Listing" NavigateUrl="~/CustListAllGrp.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="All Customer Listing By Selection" Value="All Female Customer Listing" NavigateUrl="~/RepSelCustList.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="All Dormant Account Listing" Value="All Dormant Account Listing" Enabled="False">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Account Officer Summary" Value="Account Officer Summary" NavigateUrl="~/AccountOffRep.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Marketers Monthly Report" Value="Marketers Monthly Report"></asp:MenuItem>
+                                <asp:MenuItem Text="GL Account Balances" Value="GL Account Balances" NavigateUrl="~/GLBalanceREP.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="GL Statement Of Account" Value="GL Statement Of Account" NavigateUrl="~/RepSelGLDate.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelBalSheetDate.aspx" Text="Final Account Reports"
+                                    Value="Final Account Reports"></asp:MenuItem>
+                                <asp:MenuItem Text="Loan Balances" Value="Loan Balances" NavigateUrl="~/LoanBalances.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Other Loan Reports and Classification" Value="Other Loan Reports and Classification">
+                                    <asp:MenuItem NavigateUrl="~/LoanClassRep.aspx" Text="Loan Classification" Value="Loan Classification"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/LoanClassOverdraftRep.aspx" Text="Overdraft Classification" Value="Overdraft Classification"></asp:MenuItem>
+                                    <asp:MenuItem Text="Periodic Loan Clasification (PAR)" Value="Periodic Loan Clasification (PAR)" NavigateUrl="~/RepSelLoanPARDate.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Repayment Projection" Value="Repayment Projection" NavigateUrl="~/RepSelLoanRepayProjectDate.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Payments List" Value="Payments List"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Loan Amortization" Value="Loan Amortization" NavigateUrl="~/RepSelCustLoanList.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Loan Status" Value="Loan Status"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelLoanOverview.aspx" Text="Loan Listing By Date"
+                                    Value="Loan Listing By Date"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelLoModel.aspx" Text="Loan Model Report" Value="Loan Model Report">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelLoanDetDate.aspx" Text="Loan Statistics Report"
+                                    Value="Loan Statistics Report"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RepSelAcctSumm.aspx" Text="Accounts Group Report" Value="Accounts Group Report">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="COT Table" Value="COT Table" NavigateUrl="~/COTTable.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Budget / Variance Report" Value="Budget / Variance Report"></asp:MenuItem>
+                                <asp:MenuItem Text="Fixed Asset Listing" Value="Fixed Asset Listing" NavigateUrl="~/FixedAssetRep.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Fixed Asset Disposal Report" Value="Fixed Asset Disposal Report">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Fixed Deposit Report" Value="Fixed Deposit Report"></asp:MenuItem>
+                                <asp:MenuItem Text="Interest Analysis Table" Value="Interest Analysis Table"></asp:MenuItem>
+                                <asp:MenuItem Text="Depreciation Report" Value="Depreciation Report" NavigateUrl="~/AssetDepTrans.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#FFFFC0" ForeColor="White" />
+                        <StaticMenuStyle BackColor="#80FFFF" />
+                        <StaticItemTemplate>
+                            <%# Eval("Text") %>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                    <br />
+                </td>
+            </tr>
+                    </table>
 
       
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-         
-            <!--
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer> -->
         </div>
+
+        <%-- Footer layout design --%>
+          <footer style="background: #333333; padding-bottom: 30px;" class="mt-5">
+			<div class="container pt-5">
+				<div class="row">
+					<div class="col-lg-4 col-sm-12">
+						<h6 style="color: white;">Contact Us</h6>
+						<p style="color: white; font-size: 13px;" >65, Michael Adebiyi street Joyce-b road Mobil bus-stop ring-road Ibadan, Nigeria.</p>
+					</div>
+	
+					<div class="col-lg-4 col-sm-12">
+							<h6 style="color: white;">Our Correspondence</h6>
+							<p style="color: white; font-size: 13px;">+2348-000-000-000</p>
+					</div>
+					<div class="col-lg-4 col-sm-12">
+							<h6 style="color: white;">Connect with us.</h6>
+							<ul style="display: flex; list-style: none;">
+								<li><a href="#" style="color: white;"><i class="fab fa-twitter"></i></a></li>
+								<li style="margin-left: 20px;"><a href="#" style="color: white;"><i class="fab fa-facebook"></i></a></li>
+								<li style="margin-left: 20px;"><a href="#" style="color: white;"><i class="fab fa-instagram"></i></a></li>
+								<li style="margin-left: 20px;"><a href="#" style="color: white;"><i class="mdi mdi-email"></i></a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="container mt-3 text-center">
+				<p style="color: white; font-size: 14px;">&copy; All rights Reserved Shield Banking - <%: DateTime.Now.Year %> </p>
+			</div>
+		</footer>
+       
 
     </form>
 </body>

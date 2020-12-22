@@ -1,5 +1,5 @@
 ﻿
-<%@ Page Title="SMS Control" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SMSControl.aspx.vb" Inherits="Banking._Default" %>
+<%@ Page Title="SMS Control" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="SMSControl.aspx.vb" Inherits="SMSControl" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -29,7 +29,7 @@
             <div class="mt-2">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <asp:Panel ID="Panel1" runat="server" Height="238px" ScrollBars="Auto" Style="width: 781px;">
+            <asp:Panel ID="Panel1" runat="server" Height="238px" ScrollBars="Auto">
                 <asp:GridView ID="GridViewDet" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Font-Size="Small" Height="1px" Style="left: 230px; top: 299px" Width="771px">
                     <RowStyle BackColor="White" ForeColor="#330099" />
                     <Columns>
