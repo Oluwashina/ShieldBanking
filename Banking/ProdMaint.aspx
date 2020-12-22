@@ -170,11 +170,11 @@
         <div class="buttons row justify-content-center">
             <asp:Button ID="ButAdd" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Add" />
             <asp:Button ID="ButSave" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Save" />
-            <asp:Button ID="ButSearch" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Close" />
+            <asp:Button ID="ButSearch" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Search" />
             <asp:Button ID="ButEdit" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Edit" />
             <asp:Button ID="ButPrevious" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Previous" />
             <asp:Button ID="ButNext" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Next" />
-            <asp:Button ID="ButPrint" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Close" />
+            <asp:Button ID="ButPrint" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Print" />
             <asp:Button ID="ButClose" CssClass="btn btn-outline-primary mr-3" runat="server" Text="Close" />
         </div>
     </div>
